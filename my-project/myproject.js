@@ -1,8 +1,8 @@
 let dataProject = []
 console.log(dataProject);
 
-function addProject(event) {
-    event.preventDefault()
+function addProject(e) {
+    e.preventDefault()
 
     let title = document.getElementById('input-title').value
     let startDate = document.getElementById('input-startDate').value
@@ -66,7 +66,7 @@ function renderProject() {
                         <button>Edit</button>
                     </div>
                     <div class="btn-right">
-                        <button>Delete</button>
+                        <button class="del-btn">Delete</button>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ function renderProject() {
                         </a>
                     </h2>
                     <div class="duration-project">
-                        <p>Durasi: <span>1 Bulan</span></p>
+                        <p>Durasi: <span>${getTime(dataProject[i].startDate,dataProject[i].endDate)}</span></p>
                     </div>
                     <div class="description-project">
                         <p>
@@ -105,11 +105,28 @@ function renderProject() {
                             <button>Edit</button>
                         </div>
                         <div class="btn-right">
-                            <button>Delete</button>
+                            <button class="del-btn">Delete</button>
                         </div>
                     </div>
                 </div>
             </div> 
         `
     }
+
 }
+
+
+function getTime(startDate, endDate){
+    if(startDate[5] == 0){startDate = startDate[6]} else {startDate = startDate[5]+startDate[6]}
+    if(endDate[5] == 0){endDate = endDate[6]}else{endDate = endDate[5]+endDate[6]}
+
+    const startMonth = Number(startDate);
+    const endMonth = Number(endDate);
+
+    const duration = endMonth - startMonth
+
+    if(duration === 0) return "<1 bulan"
+
+    return endMonth - startMonth + " " + "bulan"
+}
+
