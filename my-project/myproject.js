@@ -57,9 +57,9 @@ function renderProject() {
                     </p>
                 </div>
                 <div class="technologis-project">
-                    <i class="fa-brands fa-react"></i>
                     <i class="fa-brands fa-node-js"></i>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-laravel"></i>
                 </div>
                 <div class="btn-group">
                     <div class="btn-left">
