@@ -1,8 +1,8 @@
 let dataProject = []
 console.log(dataProject);
 
-function addProject(e) {
-    e.preventDefault()
+function addProject(event) {
+    event.preventDefault()
 
     let title = document.getElementById('input-title').value
     let startDate = document.getElementById('input-startDate').value

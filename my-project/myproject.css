@@ -30,7 +30,7 @@
     margin-bottom: 8px;
 }
 
-input, textarea, .checkmark, .project-form .project-container .file-project .input-image-group label p{
+input, textarea, .checkmark, .project-form .project-container .file-project .input-image-group label{
     box-shadow: 3px 3px 4px rgb(185, 185, 185);
     border: 1px solid rgb(202, 202, 202);
     padding: 4px 4px 4px 8px;
@@ -224,6 +224,7 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
     border: 1px;
     border-radius: 12px 0 0 12px;
     font-size: 16px;
+    padding: 6px;
 }
 
 .project-form .project-container .file-project .input-image-group label p:hover{
@@ -267,18 +268,6 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
     grid-template-columns: auto auto auto; 
     gap: 20px;  */
     margin: 0 100px;
-}
-
-#no-project{
-    /* white-space: nowrap; */
-    /* position: absolute; */
-    /* left: 50%;
-    top: 50%;
-    transform: translate(-50%,50%); */
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: bold;
-    width: 100%;
 }
 
 .project-list .project-list-item{
