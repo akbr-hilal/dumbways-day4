@@ -252,28 +252,27 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
 
 /* Project List */
 .title-list{
-    text-align: center;
     /* background-color: wheat; */
+    text-align: center;
     margin: 40px 0;
     box-sizing: border-box;
 }
 .project-list{
     /* background-color: whitesmoke; */
-    align-items: center;
+    align-items:flex-start;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     /* display: grid;
-    grid-template-columns: auto auto auto; */
-    /* gap: 20px; */
+    grid-template-columns: auto auto auto; 
+    gap: 20px;  */
     margin: 0 100px;
-
 }
 
 .project-list .project-list-item{
-    width: 30%;
+    width: 29%;
     padding: 15px;
-    margin: 20px;
+    margin: 20px 28px 20px 20px;
     border: 2px solid #dbdbdb;
     border-radius: 12px;
 }
@@ -308,6 +307,7 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
 .project-list .project-list-item .project-content .technologis-project i{
     font-size: 24px;
     padding-right: 12px;
+    font-weight: 500;
 }
 
 .project-list .project-list-item .project-content .btn-group{
