@@ -80,7 +80,7 @@ function renderProject() {
                 <div class="project-image">
                     <img src="${dataProject[i].image}" alt="">
                 </div>
-                <div class="project-content">
+                <div class="project-content" >
                     <h2>
                         <a href="myproject-detail.html" target="_blank">
                             ${dataProject[i].title}
@@ -115,7 +115,6 @@ function renderProject() {
 
 }
 
-
 function getTime(startDate, endDate){
     if(startDate[5] == 0){startDate = startDate[6]} else {startDate = startDate[5]+startDate[6]}
     if(endDate[5] == 0){endDate = endDate[6]}else{endDate = endDate[5]+endDate[6]}
@@ -129,4 +128,3 @@ function getTime(startDate, endDate){
 
     return endMonth - startMonth + " " + "bulan"
 }
-

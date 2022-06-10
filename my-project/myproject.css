@@ -301,6 +301,10 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
     padding: 32px 0;
 }
 
+.project-list .project-list-item .project-content .description-project p{
+    word-break: break-all;
+}
+
 .project-list .project-list-item .project-content .technologis-project{
     margin-bottom: 12px;
 }
