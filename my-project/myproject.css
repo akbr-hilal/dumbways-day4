@@ -16,13 +16,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 0;
     height: 92vh;
 }
 
 .project-form .project-container{
     /* background-color: gray; */
-    width: 400px;
+    padding: px;
+    width: 30%;
 }
 
 .project-form h2{
@@ -30,9 +30,10 @@
     margin-bottom: 8px;
 }
 
-input, textarea, .checkmark, .project-form .project-container .file-project .input-image-group label{
+input, textarea, .checkmark, .project-form .project-container .file-project .input-image-group label p{
     box-shadow: 3px 3px 4px rgb(185, 185, 185);
     border: 1px solid rgb(202, 202, 202);
+    padding: 4px 4px 4px 8px;
 }
 
 /* Input Title */
@@ -45,9 +46,8 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
 
 .project-form .project-container .title-project input{
     width: 100%;
-    padding: 8px;
     border-radius: 12px;
-    margin-top: 6px; 
+    margin-top: 4px; 
 }
 
 /* Input Date */
@@ -72,9 +72,8 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
 
 .project-form .project-container .date-project input{
     width: 100%;
-    padding: 8px;
     border-radius: 12px;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 /* Input Description */
@@ -82,13 +81,12 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
     width: 100%;
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
 }
 
 .project-form .project-container .description-project textarea{
-    margin-top: 6px;
+    margin-top: 4px;
     width: 100%;
-    padding: 8px;
     border-radius: 12px;
     height: 100px;
     resize: none;
@@ -108,7 +106,7 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
 .project-form .project-container .checkbox-project .input-checkbox{
     display: flex;
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
 }
 .project-form .project-container .checkbox-project .input-checkbox label{
     display: block;
@@ -206,7 +204,7 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .project-form .project-container .file-project .input-image-group input{
@@ -222,7 +220,6 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
 }
 
 .project-form .project-container .file-project .input-image-group label p{
-    padding: 8px;
     background-color: #adadad;
     border: 1px;
     border-radius: 12px 0 0 12px;
@@ -239,17 +236,17 @@ input, textarea, .checkmark, .project-form .project-container .file-project .inp
 }
 
 .project-form .project-container .btn-project button{
-    margin-top: 28px;
-    padding: 8px 24px;
+    margin-top: 20px;
+    padding: 4px 16px;
     font-size: 16px;
     background-color: black;
     color: white;
     border-radius: 12px;
+    border-color: black;
 }
 
 .project-form .project-container .btn-project button:hover{
     background-color: orangered;
-    border-radius: 12px;
     border-color: orangered;
 }
 
